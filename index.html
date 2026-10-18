@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Sua Loja de Tecnologia</title>
+    <link rel="icon" href="assets/icon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body class="bg-black">
+
+    <nav class="navbar navbar-expand-lg bg-black border-bottom border-primary border-opacity-50 sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">
+                <i class="bi bi-cpu-fill text-primary me-1"></i>Tech<span class="text-primary">Store</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">Dúvidas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="bg-dark bg-gradient border-bottom border-primary border-opacity-25 py-5">
+        <div class="container py-lg-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold mb-3">Bem-vindo à <span class="text-primary">TechStore</span></h1>
+                    <p class="lead text-body-secondary mb-4">Sua loja de tecnologia de confiança. Encontre smartphones, notebooks e acessórios com preços imperdíveis e entrega rápida.</p>
+                    <a href="#produtos" class="btn btn-primary btn-lg">
+                        <i class="bi bi-tags-fill me-1"></i>Ver Ofertas
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div id="carouselDestaques" class="carousel slide carousel-fade shadow-lg rounded-4 overflow-hidden border border-primary border-opacity-50" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselDestaques" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="4000">
+                                <div class="ratio ratio-4x3">
+                                    <img src="assets/smartphone.jpg" class="d-block w-100 object-fit-cover" alt="Smartphone X">
+                                </div>
+                                <div class="carousel-caption bg-black bg-opacity-75 rounded-3 py-2 text-light">
+                                    <h5 class="mb-0">Smartphone X</h5>
+                                    <small>Câmera dupla 48MP e 5G</small>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <div class="ratio ratio-4x3">
+                                    <img src="assets/notebook.jpg" class="d-block w-100 object-fit-cover" alt="Notebook Pro 15">
+                                </div>
+                                <div class="carousel-caption bg-black bg-opacity-75 rounded-3 py-2 text-light">
+                                    <h5 class="mb-0">Notebook Pro 15</h5>
+                                    <small>RTX 3060 para trabalho e jogos</small>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <div class="ratio ratio-4x3">
+                                    <img src="assets/FoneOuvido.jpg" class="d-block w-100 object-fit-cover" alt="Fone Bluetooth Pro">
+                                </div>
+                                <div class="carousel-caption bg-black bg-opacity-75 rounded-3 py-2 text-light">
+                                    <h5 class="mb-0">Fone Bluetooth Pro</h5>
+                                    <small>Cancelamento de ruído e 30h de bateria</small>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaques" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaques" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 border-bottom border-primary border-opacity-25">
+
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <h2 class="fw-bold">Por que comprar na <span class="text-primary">TechStore</span></h2>
+                </div>
+            </div>
+
+            <div class="row g-3 text-center justify-content-center">
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 bg-dark border-primary border-opacity-25 shadow">
+                        <div class="card-body">
+                            <i class="bi bi-truck fs-1 text-primary"></i>
+                            <h5 class="card-title mt-2">Frete grátis</h5>
+                            <p class="card-text small text-body-secondary">Em compras acima de R$ 299,00 para todo o Brasil.</p>
+                            <span class="badge bg-success">Promoção</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 bg-dark border-primary border-opacity-25 shadow">
+                        <div class="card-body">
+                            <i class="bi bi-credit-card fs-1 text-primary"></i>
+                            <h5 class="card-title mt-2">10x sem juros</h5>
+                            <p class="card-text small text-body-secondary">Parcele no cartão de crédito sem pagar nada a mais.</p>
+                            <span class="badge bg-primary">Pagamento</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 bg-dark border-primary border-opacity-25 shadow">
+                        <div class="card-body">
+                            <i class="bi bi-shield-check fs-1 text-primary"></i>
+                            <h5 class="card-title mt-2">Garantia</h5>
+                            <p class="card-text small text-body-secondary">Todos os produtos têm 12 meses de garantia.</p>
+                            <span class="badge bg-warning text-dark">12 meses</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="produtos" class="py-5">
+        <div class="container">
+
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <h2 class="fw-bold">Produtos em <span class="text-primary">Destaque</span></h2>
+                    <p class="text-body-secondary">Selecionamos os melhores para você</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 bg-dark border-primary border-opacity-25 shadow">
+                        <div class="ratio ratio-4x3">
+                            <img src="assets/smartphone.jpg" class="card-img-top object-fit-cover" alt="Smartphone X">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-danger align-self-start mb-2">Lançamento</span>
+                            <h5 class="card-title">Smartphone X</h5>
+                            <p class="card-text small text-body-secondary">Tela 6.7", 256GB, câmera dupla 48MP, 5G.</p>
+                            <p class="mb-0 small text-body-secondary text-decoration-line-through">R$ 4.799,00</p>
+                            <p class="card-text text-primary fw-bold fs-5 mb-0">R$ 4.299,00</p>
+                            <small class="text-body-secondary mb-3">ou 10x de R$ 429,90</small>
+                            <button type="button" class="btn btn-primary mt-auto"><i class="bi bi-cart-plus me-1"></i>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 bg-dark border-primary border-opacity-25 shadow">
+                        <div class="ratio ratio-4x3">
+                            <img src="assets/notebook.jpg" class="card-img-top object-fit-cover" alt="Notebook Pro 15">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-success align-self-start mb-2">Mais Vendido</span>
+                            <h5 class="card-title">Notebook Pro 15"</h5>
+                            <p class="card-text small text-body-secondary">Intel i7, 16GB RAM, 512GB SSD, RTX 3060.</p>
+                            <p class="mb-0 small text-body-secondary text-decoration-line-through">R$ 7.299,00</p>
+                            <p class="card-text text-primary fw-bold fs-5 mb-0">R$ 6.499,00</p>
+                            <small class="text-body-secondary mb-3">ou 10x de R$ 649,90</small>
+                            <button type="button" class="btn btn-primary mt-auto"><i class="bi bi-cart-plus me-1"></i>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 bg-dark border-primary border-opacity-25 shadow">
+                        <div class="ratio ratio-4x3">
+                            <img src="assets/FoneOuvido.jpg" class="card-img-top object-fit-cover" alt="Fone Bluetooth Pro">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-warning text-dark align-self-start mb-2">Oferta</span>
+                            <h5 class="card-title">Fone Bluetooth Pro</h5>
+                            <p class="card-text small text-body-secondary">Cancelamento de ruído, 30h de bateria, Hi-Res Audio.</p>
+                            <p class="mb-0 small text-body-secondary text-decoration-line-through">R$ 1.099,00</p>
+                            <p class="card-text text-primary fw-bold fs-5 mb-0">R$ 899,00</p>
+                            <small class="text-body-secondary mb-3">ou 10x de R$ 89,90</small>
+                            <button type="button" class="btn btn-primary mt-auto"><i class="bi bi-cart-plus me-1"></i>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 bg-dark border-primary border-opacity-25 shadow">
+                        <div class="ratio ratio-4x3">
+                            <img src="assets/caixaSom.jpg" class="card-img-top object-fit-cover" alt="Caixa de Som">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-info text-dark align-self-start mb-2">À prova d'água</span>
+                            <h5 class="card-title">Caixa de Som</h5>
+                            <p class="card-text small text-body-secondary">Resistente à água IPX7, 20h de bateria.</p>
+                            <p class="card-text text-primary fw-bold fs-5 mb-0">R$ 549,00</p>
+                            <small class="text-body-secondary mb-3">ou 10x de R$ 54,90</small>
+                            <button type="button" class="btn btn-primary mt-auto"><i class="bi bi-cart-plus me-1"></i>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 bg-dark border-primary border-opacity-25 shadow">
+                        <div class="ratio ratio-4x3">
+                            <img src="assets/SmartWatch.jpg" class="card-img-top object-fit-cover" alt="Smartwatch">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-danger align-self-start mb-2">Novo</span>
+                            <h5 class="card-title">Smartwatch</h5>
+                            <p class="card-text small text-body-secondary">Monitor cardíaco, GPS e mais de 100 modos de treino.</p>
+                            <p class="mb-0 small text-body-secondary text-decoration-line-through">R$ 1.399,00</p>
+                            <p class="card-text text-primary fw-bold fs-5 mb-0">R$ 1.199,00</p>
+                            <small class="text-body-secondary mb-3">ou 10x de R$ 119,90</small>
+                            <button type="button" class="btn btn-primary mt-auto"><i class="bi bi-cart-plus me-1"></i>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card h-100 bg-dark border-primary border-opacity-25 shadow">
+                        <div class="ratio ratio-4x3">
+                            <img src="assets/capaSmartphone.jpg" class="card-img-top object-fit-cover" alt="Capa Protetora">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-secondary align-self-start mb-2">Acessório</span>
+                            <h5 class="card-title">Capa Protetora</h5>
+                            <p class="card-text small text-body-secondary">Silicone resistente a quedas, compatível com o Smartphone X.</p>
+                            <p class="card-text text-primary fw-bold fs-5 mb-0">R$ 79,90</p>
+                            <small class="text-body-secondary mb-3">ou 10x de R$ 7,99</small>
+                            <button type="button" class="btn btn-primary mt-auto"><i class="bi bi-cart-plus me-1"></i>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="bg-dark py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold text-center mb-4">Dúvidas <span class="text-primary">Frequentes</span></h2>
+                    <div class="accordion" id="accordionFaq">
+                        <div class="accordion-item bg-black border-primary border-opacity-25">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button bg-black" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">Qual o prazo de entrega?</button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#accordionFaq">
+                                <div class="accordion-body text-body-secondary">Enviamos em até 24h após a confirmação do pagamento. A entrega leva de 2 a 7 dias úteis, conforme a região.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-black border-primary border-opacity-25">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed bg-black" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">Posso trocar um produto?</button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                                <div class="accordion-body text-body-secondary">Sim. Você tem até 7 dias após o recebimento para solicitar troca ou devolução, sem custo.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-black border-primary border-opacity-25">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed bg-black" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">Quais formas de pagamento são aceitas?</button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                                <div class="accordion-body text-body-secondary">Cartão de crédito em até 10x sem juros, Pix com aprovação imediata e boleto bancário.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-black border-top border-primary border-opacity-50 py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold"><i class="bi bi-cpu-fill text-primary me-1"></i>Tech<span class="text-primary">Store</span></h5>
+                    <p class="text-body-secondary small">Tecnologia de ponta ao seu alcance. Qualidade, confiança e os melhores preços.</p>
+                    <div class="d-flex gap-3 fs-5">
+                        <a href="#" class="link-primary" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="link-primary" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="link-primary" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="link-primary" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-primary">Links Rápidos</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1"><a href="#" class="link-light link-opacity-50 link-opacity-100-hover text-decoration-none">Sobre Nós</a></li>
+                        <li class="mb-1"><a href="#" class="link-light link-opacity-50 link-opacity-100-hover text-decoration-none">Política de Privacidade</a></li>
+                        <li class="mb-1"><a href="#" class="link-light link-opacity-50 link-opacity-100-hover text-decoration-none">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-primary">Contato</h6>
+                    <ul class="list-unstyled small text-body-secondary">
+                        <li class="mb-1"><i class="bi bi-telephone me-2"></i>(67) 99999-9999</li>
+                        <li class="mb-1"><i class="bi bi-envelope me-2"></i>contato@techstore.com</li>
+                        <li class="mb-1"><i class="bi bi-geo-alt me-2"></i>Campo Grande - MS</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-primary border-opacity-25">
+            <p class="mb-0 small text-body-secondary text-center">&copy; 2026 TechStore. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
